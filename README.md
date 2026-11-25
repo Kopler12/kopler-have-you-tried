@@ -21,9 +21,10 @@ the agent is.
 
 ## How it works
 
-`main.py` writes that single line to `/output/entry.txt` (UTF-8, 1–199
-characters, one line, no trailing newline) and asserts the gate before
-writing:
+`main.py` builds the line from three beats — the classic fix, the plea,
+and the confession — validates it against the gate (UTF-8, 1–199
+characters, one line, no trailing newline), then writes it to
+`/output/entry.txt`:
 
 ```sh
 python3 main.py
